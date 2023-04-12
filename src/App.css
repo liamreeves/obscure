@@ -1,0 +1,29 @@
+@font-face {
+  font-family: amaticBold;
+  src: url(./fonts/AmaticSC-Bold.ttf);
+}
+
+.App {
+  text-align: center;
+  background-color: darkslategrey;
+  height: 100%;
+}
+
+.word-box {
+  height: 100%;
+  font-family: amaticBold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.word-box>div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: aliceblue;
+}

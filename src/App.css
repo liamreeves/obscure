@@ -7,28 +7,31 @@
   text-align: center;
   background-color: #000011;
   height: 100%;
+  padding: 3vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .word-box {
-  height: 500px;
+  height: 80%;
+  overflow-y: auto;
   font-family: amaticBold;
   font-size: 2rem;
   font-size: 3vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .word-box > div {
   width: 50%;
+  margin-top: 3vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   color: aliceblue;
 }
@@ -40,16 +43,21 @@
 }
 
 .word-def {
+  height: 80%;
   font-size: 2rem;
-  font-size: 3vh;
+  font-size: 3.2vh;
 }
 
-.word-box > button {
+button {
   justify-self: flex-end;
+  margin-top: 3vh;
 }
 
 .dropdown-option {
+  margin-top: 3vh;
   text-align: center;
+  font-size: 1.5rem;
+  font-size: 2vh;
   background-color: #000011;
   color: white;
   border-color: aqua;

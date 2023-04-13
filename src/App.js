@@ -32,8 +32,8 @@ function App() {
       <div className="word-box">
         <div className="word">{word[0]?.toUpperCase()}:</div>
         <div className="word-def">{word[1]?.toLowerCase()}</div>
-        <button onClick={randomWord}>New Word</button>
       </div>
+      <button onClick={randomWord}>New Word</button>
       {/* Render the WordDropdown component and pass the setWord function as a prop */}
       <WordDropdown setWord={setWord} />
     </div>

@@ -5,25 +5,53 @@
 
 .App {
   text-align: center;
-  background-color: darkslategrey;
+  background-color: #000011;
   height: 100%;
-}
-
-.word-box {
-  height: 100%;
-  font-family: amaticBold;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
 }
 
-.word-box>div {
+.word-box {
+  height: 500px;
+  font-family: amaticBold;
+  font-size: 2rem;
+  font-size: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word-box > div {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   color: aliceblue;
+}
+
+.word {
+  font-size: 4rem;
+  font-size: 5vh;
+  text-decoration: underline;
+}
+
+.word-def {
+  font-size: 2rem;
+  font-size: 3vh;
+}
+
+.word-box > button {
+  justify-self: flex-end;
+}
+
+.dropdown-option {
+  text-align: center;
+  background-color: #000011;
+  color: white;
+  border-color: aqua;
+  border-radius: 5px;
 }

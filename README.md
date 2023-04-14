@@ -5,9 +5,9 @@ Getting started
 
 To get started with this app, follow these steps:
 
-    Clone this repository to your local machine.
-    Install the necessary dependencies by running `npm install` in the root directory of the project.
-    Start the development server by running `npm start`. This will launch the app in your default browser at http://localhost:3000.
+Clone this repository to your local machine.
+Install the necessary dependencies by running `npm install` in the root directory of the project.
+Start the development server by running `npm start`. This will launch the app in your default browser at http://localhost:3000.
 
 # Demo
 

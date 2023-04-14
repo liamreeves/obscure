@@ -15,7 +15,7 @@
 }
 
 .word-box {
-  height: 80%;
+  height: 50%;
   overflow-y: auto;
   font-family: amaticBold;
   font-size: 2rem;
@@ -42,7 +42,7 @@
 }
 
 .word-def {
-  height: 80%;
+  height: 50%;
   font-size: 2rem;
   font-size: 3.2vh;
 }
@@ -50,6 +50,13 @@
 button {
   justify-self: flex-end;
   margin-top: 3vh;
+
+  font-family: initial
+}
+
+select {
+
+  font-family: initial
 }
 
 .dropdown-option {
@@ -61,4 +68,45 @@ button {
   color: white;
   border-color: aqua;
   border-radius: 5px;
+}
+
+.tooltip {
+  background-color: aqua;
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99px;
+  margin-right: auto;
+  font-family: amaticBold;
+  font-size: 1.5rem;
+}
+
+.tooltip-text {
+  background-color: hsla(0, 0%, 100%, 0.9);
+  border-radius: 20px;
+  padding: 1rem;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  transition: all;
+  max-width: 200px;
+  width: 200px;
+  font-family: initial;
+  font-size: 1rem;
+  font-size: 3vh;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  top: -5px;
+  left: 30px;
+}
+
+.mobile-tooltip-toggle {
+  visibility: visible;
+  top: -5px;
+  left: 30px;
 }

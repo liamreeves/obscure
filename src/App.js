@@ -6,6 +6,7 @@ import WordDropdown from "./components/WordDropdown";
 
 function App() {
   const [word, setWord] = useState([]);
+  const [tooltipToggle, handleTooltipToggle] = useState(false)
 
   const randomWord = () => {
     // Get a list of keys from the words object
@@ -29,6 +30,15 @@ function App() {
 
   return (
     <div className="App">
+      <div onClick={() => handleTooltipToggle(!tooltipToggle)} class="tooltip">
+        ?
+        <span class={`tooltip-text ${tooltipToggle ? "mobile-tooltip-toggle" : ""}`}>
+          The Dictionary of Obscure Sorrows is a website, YouTube channel and book
+          that coins and defines new words for emotions that don't have a name.
+          It's a creative and insightful look at the human condition, and it can
+          help you to better understand yourself and the world around you.
+        </span>
+      </div>
       <div className="word-box">
         <div className="word">{word[0]?.toUpperCase()}:</div>
         <div className="word-def">{word[1]?.toLowerCase()}</div>
